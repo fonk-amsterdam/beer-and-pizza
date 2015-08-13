@@ -14,7 +14,7 @@ HxOverrides.cca = function(s,index) {
 };
 var Main = function() {
 	this.isLaunched = false;
-	console.log("Want to build awesome applications? Join us: http://www.fonk-amsterdam.com/hiring/");
+	console.log("Want to build awesome applications? Join us: http://fonk-amsterdam.nl/join/frontend.html");
 	this.h = window.innerHeight;
 	this.w = window.innerWidth;
 	this.dog = js_Boot.__cast(window.document.getElementById("dog") , HTMLImageElement);

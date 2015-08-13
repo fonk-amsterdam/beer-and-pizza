@@ -91,5 +91,24 @@ function segment()
 $(document).ready(function() 
 {
 	segment();
+
+	$("#dog").click(function() {
+		analytics.track('Launched dog');
+	});
+	$("#dog").mouseout(function() {
+		// console.log("mousout");
+		analytics.track('Stopped tickling dog');
+	});
+	$("#dog").mouseover(function() {
+		// console.log("mouseover");
+		analytics.track('Start tickling  dog');
+	});
+
+	$(document).keydown(function(e) {
+		// console.log(e.which);
+		if(e.which === 85){
+			analytics.track("Developer probably presses cmd+alt+u");
+		}
+	});
 });
 
